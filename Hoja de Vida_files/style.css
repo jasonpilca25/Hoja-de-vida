@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #dbdee6; /* Verde claro */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #af4c4c; /* Verde más oscuro */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+    text-align: right;
+}
+
+h1 {
+    font-size: 26px;
+    color: #8e3838; /* Verde oscuro */
+}
+
+h2 {
+    font-size: 18px;
+    color: #555555;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #4c6baf; /* Verde */
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background-color: #2e24b9; /* Verde claro */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+h3:hover {
+    background-color: #c53030; /* Verde más claro al pasar el mouse */
+}
+
+h3::after {
+    content: '▼';
+    font-size: 14px;
+    color: #15015f; /* Verde */
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    transition: transform 0.3s ease;
+}
+
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 15px;
+    border-left: 3px solid #2933c0; /* Verde más oscuro */
+    background-color: #f1f8e9; /* Verde muy claro */
+    border-radius: 0 0 5px 5px;
+}
+
+.section-content.show {
+    max-height: 800px; /* Ajustable a la altura del contenido */
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+p, ul {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #777;
+}
